@@ -1,0 +1,12 @@
+page-home { 
+    ion-list{
+        border:none;
+    }
+    .list-ios .item-block .item-inner{
+        border:none!important;
+    }
+
+    .list-ios > .item-block:first-child{
+        border:none!important;
+    }
+}

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Check if prime or not
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary" floating>Enter Number</ion-label>
+      <ion-input type="number" value="" (keypress)="keyPress($event)" [(ngModel)]="inputedNumber"></ion-input>
+    </ion-item>
+
+    <ion-item style="text-align:center">
+        <button ion-button (click)="checkForPrime()">Check If its Prime</button>
+    </ion-item>
+
+    <div *ngIf="primeOrNot">
+      This is a prime Number
+    </div>
+    <div *ngIf="primeOrNot === false">
+      This is not prime number
+    </div>
+
+  </ion-list>
+</ion-content>
